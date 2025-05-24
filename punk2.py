@@ -53,13 +53,13 @@ while True:
     img = draw_mirrored_robot(img, results.pose_landmarks)
 
     # ✅ Draw real you
-    mp.solutions.drawing_utils.draw_landmarks(
-        img,
-        results.pose_landmarks,
-        mp_pose.POSE_CONNECTIONS,
-        landmark_drawing_spec=mp.solutions.drawing_utils.DrawingSpec(color=(0, 255, 0), thickness=2, circle_radius=4),
-        connection_drawing_spec=mp.solutions.drawing_utils.DrawingSpec(color=(255, 255, 255), thickness=2)
-    )
+    # mp.solutions.drawing_utils.draw_landmarks(
+    #     img,
+    #     results.pose_landmarks,
+    #     mp_pose.POSE_CONNECTIONS,
+    #     landmark_drawing_spec=mp.solutions.drawing_utils.DrawingSpec(color=(0, 255, 0), thickness=2, circle_radius=4),
+    #     connection_drawing_spec=mp.solutions.drawing_utils.DrawingSpec(color=(255, 255, 255), thickness=2)
+    # )
 
     # Show result
     cv2.imshow("Cyberpunk Clone - Same Frame", img)

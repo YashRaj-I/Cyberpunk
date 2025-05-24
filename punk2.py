@@ -49,10 +49,10 @@ while True:
     img = detector.findPose(img, draw=False)
     results = detector.results
 
-    # ✅ Draw robot skeleton in mirrored position
+    #  Draw robot skeleton in mirrored position
     img = draw_mirrored_robot(img, results.pose_landmarks)
 
-    # ✅ Draw real you
+    #  Draw real you
     # mp.solutions.drawing_utils.draw_landmarks(
     #     img,
     #     results.pose_landmarks,
